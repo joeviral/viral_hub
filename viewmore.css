@@ -118,3 +118,20 @@ body{
 
 }
 
+.gallery-btn{
+    width:100%;
+    text-align:center;
+    margin:40px 0 60px;
+}
+
+.view-more-btn{
+    display:inline-block !important;
+    background:#00d9ff !important;
+    color:#000 !important;
+    padding:15px 35px !important;
+    border-radius:12px !important;
+    text-decoration:none !important;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow:0 0 15px #00d9ff;
+}
