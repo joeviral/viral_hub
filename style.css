@@ -452,18 +452,7 @@ text-align: center;
 
     filter: blur(60px);
 
-    animation: glowMove 8s e
-
-@keyframes glowMove{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
+    animation: glowMove 8s ease infinite;
 }
 
 /* MOBILE */
