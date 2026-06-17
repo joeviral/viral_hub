@@ -446,22 +446,13 @@ text-align: center;
     border-radius: 40px;
 
     background:
-    linear-gradient(
-        45deg,
-        #00d9ff,
-        #0066ff,
-        #8a2be2,
-        #ff00ff,
-        #00ffcc,
-        #00d9ff
-    );
+    radial-gradient(circle at 20% 30%, #00d9ff 0%, transparent 30%),
+    radial-gradient(circle at 80% 30%, #7b2cff 0%, transparent 30%),
+    radial-gradient(circle at 50% 80%, #00ffcc 0%, transparent 30%);
 
-    background-size: 400% 400%;
+    filter: blur(60px);
 
-    filter: blur(50px);
-
-    animation: glowMove 8s ease infinite;
-}
+    animation: glowMove 8s e
 
 @keyframes glowMove{
     0%{
