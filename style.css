@@ -420,3 +420,75 @@ text-align: center;
   text-decoration: none;
   border-radius: 8px;
 }
+
+/* HERO IMAGE CONTAINER */
+.hero-image-container{
+    position: relative;
+    width: 280px;
+    margin: 40px auto;
+}
+
+/* PROFILE IMAGE */
+.hero-image{
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    border: 4px solid #00d9ff;
+}
+
+/* ANIMATED GEMINI GLOW */
+.gradient-glow{
+    position: absolute;
+    inset: -30px;
+    z-index: 1;
+    border-radius: 40px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #00d9ff,
+        #0066ff,
+        #8a2be2,
+        #ff00ff,
+        #00ffcc,
+        #00d9ff
+    );
+
+    background-size: 400% 400%;
+
+    filter: blur(50px);
+
+    animation: glowMove 8s ease infinite;
+}
+
+@keyframes glowMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .hero-image-container{
+        width: 220px;
+        margin: 30px auto;
+    }
+
+    .hero-image{
+        border-radius: 25px;
+    }
+
+    .gradient-glow{
+        inset: -20px;
+        filter: blur(40px);
+    }
+}
