@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Portfolio Gallery</title>
+<title>Portfolio Gallery</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="viewmore.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="viewmore.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+
+<header>
+<nav>
+
+<div class="logo-area">
+    <img src="logo.jpg" alt="Logo">
+    <h2>Joe Tech</h2>
+</div>
+
+<ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+</ul>
+
+<div class="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+</header>
 
 <section class="gallery-page">
 
-  <div class="section-title">
-    <h2>Image Gallery</h2>
-  </div>
+    <div class="section-title">
+        <h2>Image Gallery</h2>
+    </div>
 
-  <div class="gallery-grid">
+    <div class="gallery-grid">
 
-    <img src="more.jpg" alt="Gallery Image">
-    <img src="more1.jpg" alt="Gallery Image">
-    <img src="more2.jpg" alt="Gallery Image">
-    <img src="more3.jpg" alt="Gallery Image">
-    <img src="more4.jpg" alt="Gallery Image">
-    <img src="more5.jpg" alt="Gallery Image">
+        <img src="more.jpg" alt="">
+        <img src="more1.jpg" alt="">
+        <img src="more2.jpg" alt="">
+        <img src="more3.jpg" alt="">
+        <img src="more4.jpg" alt="">
+        <img src="more5.jpg" alt="">
 
-  </div>
+    </div>
+
+    <div class="gallery-btn">
+        <a href="viewmore.html" class="view-more-btn">
+            View More
+        </a>
+    </div>
 
 </section>
 
-<a href="viewmore.html"
-class="view-more-btn">View more</a>
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+</script>
 
 </body>
 </html>
