@@ -11,16 +11,14 @@ window.addEventListener("load", () => {
 });
 
 // MOBILE MENU
-
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
 });
 
-// CLOSE MENU WHEN A LINK IS CLICKED
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll(".nav-links li a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("active");
     });
