@@ -401,6 +401,7 @@ footer{
 
   .hero-image img{
     max-width:200px;
+    animation:float 4s ease-in-out infinite;
   }
 
 }
